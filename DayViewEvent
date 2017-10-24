@@ -1,0 +1,13 @@
+package com.thomascook.core.dayview
+
+import java.util.*
+
+/**
+ * View model for the day view
+ * This can be used for any time related domain object
+ */
+data class DayViewEvent(val id: Int,
+                        val startTime: Calendar,
+                        val endTime: Calendar,
+                        val name: String,
+                        val moreInfo: String)
