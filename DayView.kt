@@ -11,7 +11,6 @@ import android.text.style.StyleSpan
 import android.util.AttributeSet
 import android.view.*
 import android.widget.OverScroller
-import com.condecosoftware.roombooking.R
 import java.text.SimpleDateFormat
 import java.util.*
 import kotlin.properties.Delegates
