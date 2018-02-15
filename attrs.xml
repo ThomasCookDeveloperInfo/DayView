@@ -1,24 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-  <!-- Styleable attributes for the day view -->
+
+    <!-- Styleable attributes for views which display information on a timeline-->
+    <declare-styleable name="TimeView">
+        <attr name="timeColumnWidth" format="dimension" />
+        <attr name="timeColumnPadding" format="dimension" />
+        <attr name="mainTextSize" format="dimension" />
+        <attr name="hourHeight" format="dimension" />
+        <attr name="hourSeparatorHeight" format="dimension" />
+        <attr name="timeTextColor" format="color" />
+        <attr name="timeColumnBGColor" format="color" />
+        <attr name="hourSeparatorColor" format="color" />
+        <attr name="nowLineColor" format="color" />
+        <attr name="nowLineHeight" format="dimension" />
+        <attr name="eventColumnBGColor" format="color" />
+    </declare-styleable>
+
+    <!-- Styleable attributes for the timeline view -->
     <declare-styleable name="DayView">
-        <attr name="navigationRowHeight" format="dimension"/>
-        <attr name="navigationRowBGColor" format="color"/>
-        <attr name="navigationRowTextColor" format="color"/>
-        <attr name="timeColumnWidth" format="dimension"/>
-        <attr name="timeColumnPadding" format="dimension"/>
-        <attr name="mainTextSize" format="dimension"/>
-		<attr name="eventNameTextSize" format="dimension"/>
-        <attr name="hourHeight" format="dimension"/>
-        <attr name="hourSeparatorHeight" format="dimension"/>
-        <attr name="timeTextColor" format="color"/>
-        <attr name="timeColumnBGColor" format="color"/>
-        <attr name="hourSeparatorColor" format="color"/>
-        <attr name="nowLineColor" format="color"/>
-        <attr name="eventColumnBGColor" format="color"/>
-        <attr name="eventBGColor" format="color"/>
-        <attr name="eventCornerRadius" format="dimension"/>
-        <attr name="eventTextColor" format="color"/>
+        <attr name="eventCell" format="reference" />
+    </declare-styleable>
+
+    <!-- Styleable attributes for the time slot selector view -->
+    <declare-styleable name="TimeSlotSelectorView">
+        <attr name="selectedColor" format="color" />
+        <attr name="unavailableColor" format="color" />
+        <attr name="slot_length_minutes" format="integer" />
+        <attr name="hatch_spacing" format="float" />
     </declare-styleable>
 
 </resources>

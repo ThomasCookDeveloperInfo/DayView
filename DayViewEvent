@@ -6,8 +6,11 @@ import java.util.*
  * View model for the day view
  * This can be used for any time related domain object
  */
-data class DayViewEvent(val id: Int,
-                        val startTime: Calendar,
-                        val endTime: Calendar,
-                        val name: String,
-                        val moreInfo: String)
+data class DayViewEvent(val appModel: Any,
+                        val id: Int,
+                        val startTime: Date,
+                        val endTime: Date,
+                        val name: CharSequence,
+                        val moreInfo: String,
+                        var left: Int = 0,
+                        var right: Int = 0)
